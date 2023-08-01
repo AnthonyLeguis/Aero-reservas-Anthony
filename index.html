@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/CSS/estilos.css" as="style">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="icon" type="image/png" href="IMG/airplane_10295353.png">
+    <title>Vuelos Anthony's</title>
+</head>
+<body>
+    <div class="Inicio">
+        <div class="Inicio_2">
+            <h1>
+                Vuelos Anthony's
+            </h1>
+            <div class="form">
+                <div>
+                    <div id="modal" class="modal">
+                        <div id="Img_modal" class="Img_modal">
+                            <img 
+                            src="/IMG/check verde.svg" 
+                            alt="check_verde">
+                        </div>
+                        <p id="mensajeModal" class="mensajeModal">
+                        </p>
+                    </div>
+                    <form class="form_2" id="formulario">
+                        <div class="titulo">
+                            <legend>
+                                Agende su vuelo
+                            </legend>    
+                        </div>
+
+                        <div class="div_form">
+                            <label class="label" for="Nombre">Ingrese su Nombre</label>
+                            <input class="input"
+                            name="Nombre"
+                            type="text"
+                            id="Nombre">
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="Apellido">Ingrese su Apellido</label>
+                            <input class="input"
+                            name="Apellido"
+                            type="text"
+                            id="Apellido">
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="Identificacion">Ingrese su N° de Identificación</label>
+                            <input class="input"
+                            name="Identificacion"
+                            type="text"
+                            id="Identificacion">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="NumeroVuelo">Ingrese su N° de Vuelo</label>
+                            <input class="input"
+                            name="NumeroVuelo"
+                            type="text"
+                            id="NumeroVuelo"
+                            oninput="datosCitas(event)">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="NumeroTel">Ingrese su teléfono</label>
+                            <input class="input"
+                            name="NumeroTel"
+                            type="tel"
+                            id="NumeroTel"
+                            oninput="datosCitas(event)">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="CiudadOrigen">Ciudad de Orígen</label>
+                            <input class="input"
+                            name="CiudadOrigen"
+                            type="text"
+                            id="CiudadOrigen">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="CiudadLLegada">Ciudad de llegada</label>
+                            <input class="input"
+                            name="CiudadLLegada"
+                            type="text"
+                            id="CiudadLLegada">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="Fecha">Fecha del vuelo</label>
+                            <input class="input"
+                            name="Fecha"
+                            type="date"
+                            id="Fecha">    
+                        </div>
+                        <div class="div_form">
+                            <label class="label" for="Hora">Hora del vuelo</label>
+                            <input class="input"
+                            name="Hora"
+                            type="time"
+                            id="Hora">    
+                        </div>
+
+                        <button type="submit" class="btn_Agendar">Agendar</button>
+    
+                    </form>
+                </div>
+                <div class="resultado">
+                    <div class="titulo">
+                        <h2>
+                            Resultado
+                        </h2>
+                        <div id="divCita" class="divCita">
+                            <div class="divCita__nombre">
+
+                            </div>
+                            <ul class="resultado_busqueda" id="citas">
+                                    
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
